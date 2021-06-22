@@ -2,13 +2,13 @@ html{
   height: 100%;
 }
 .fundodestaques {
-  background-color: white;
+  background-color: #CFE7E8;
   display:inline-block;
   color:black;
-  text-align: center;  
+  margin-bottom: 10px; 
 }
 .header {
-  background: rgb(17, 0, 0);
+  background: rgb(255, 255, 255);
   margin-bottom: 20px;
   text-align: center;
   flex-wrap: wrap;
@@ -16,7 +16,7 @@ html{
   padding: 15px;
 }
 .container{
-  background: rgba(0, 0, 0, 0.658);
+  background: #CFE7E8(255, 255, 255); /*fundo*/ 
 }
 body{
   background: url(fundocinema1.jpg) center;
@@ -24,11 +24,11 @@ body{
 .btn1{
   text-align:right; 
   width:100%; 
-  padding:10px;
-  margin-top: 5px;
+  padding: 15px 0 15px 0;
+  margin-top: 2px;
 }
 .jumbotron {
-  background: url(oscar2021.webp) center;
+  background: url(cinemao.jpg) center;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -43,12 +43,18 @@ h12 {
   padding: 10px;
 }
 .pesquisar{
+  margin-top: 20px;
   width: 100%;
   top: 15px;
+
 }
 .dest{
-  color: white;
+  color: #8FA0A1;
   padding: 10px;
+  
+  margin-top: 20px;
+  background: #ccc;
+  box-sizing: 10px;
 }
 .header_area {
   padding: 20px; 
@@ -57,18 +63,27 @@ h12 {
   margin-top: 30px;
 }
 .menu_area nav a{
-  background: rgba(85, 62, 4, 0.747);
+ 
   color: white;
   margin-bottom: 10px;
+
 }
-.menu_area nav a:hover{
-  background: rgba(85, 62, 4, 0.336);
+
+#botao {
+  color: blue;
+  border: 1px solid blue;
 }
+
+
 .active{
-  background-color: #696369 !important;
+  background-color: #8FA0A1 !important;
 }
 .logo {
   width: 150px;  
+}
+
+.poster{
+  height: 400px;
 }
 .carousel-item{
   flex-wrap: wrap;
@@ -76,12 +91,12 @@ h12 {
   padding: 15px;
 }
 .row {
-  padding: 2px;
+  padding: 20px;
 }
 
 .fundodestaques{
-  background: white;
-  height: 550px;
+  background: #8FA0A1;
+  height: 450px;
   width: 200px;
   display: flex;
   align-items: center;  
@@ -103,6 +118,7 @@ h12 {
   text-align: center;
 }
 .modal-title{
+  color: white;
   text-align: center;
 }
 .modal-body img{
@@ -110,7 +126,7 @@ h12 {
 }
 .footer {
   margin-top: 10px;
-  background: rgba(17, 0, 0, 0.932);
+  background: #8FA0A1;
   color:white;
 }
 .footer_area{
@@ -118,26 +134,30 @@ h12 {
   text-align: center;
 }
 
+#imagens {
+  width: 50%;
+}
+
 /*Destaques*/
 .destaques{
-  background: rgba(139, 133, 133, 0.932);
+  background: #8FA0A1;
   margin-bottom: 20px;
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 15px;
+  padding: 20px;
   width: 0px;
 }
 
 /*Localização*/
 .display-4 {
-  color: rgb(209, 178, 1);
+  color: rgb(255, 255, 255);
 }
 .localiz {
-  color: rgb(187, 169, 5);
+  color: rgb(255, 255, 255);
 }
 .local {
-  color:rgb(121, 103, 3);
+  color:rgb(255, 255, 255);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -151,9 +171,88 @@ h12 {
 
 /*CSS Menu Mobile - Fim*/
 @media screen and (max-width: 600px) {
-  .cartoestodos{}
+ 
   .fundodestaques{
     width: 100%;
     margin: 5px;
   }  
 }
+.oi { 
+  display: flex;
+  
+  /*Sugestion: */
+  overflow: hidden;
+  
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  
+ }
+ .logo { 
+   color: white;
+   font-size: 26px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+ }
+
+ a.logo {
+   text-decoration: none;
+
+ }
+
+ a:hover.logo {
+  text-decoration: none;
+  color: white;
+}
+
+
+ nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: system-ui;
+   background:  #8FA0A1;
+   height: 8vh;
+ }
+
+
+ .oi2 { 
+  display: center;
+ }
+ .nav-list {
+   color: white;
+	 
+  list-style: none;
+  /*Invalid: display: flex;*/	   
+}
+.nav-list li { 
+  letter-spacing: 3px;
+  margin-left: 32px;
+  /*Sugestion:*/
+  display: inline;
+}
+.modal-footer {
+  color: white;
+}
+
+.nav-list li a { 
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.nav-list li a:hover { 
+color: blue;
+}
+
+.mb-0 {
+  color: black;
+  padding-bottom: 10px;
+}
+
+.card-text {
+  color: black;
+}
+
